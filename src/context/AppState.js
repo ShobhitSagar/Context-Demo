@@ -4,7 +4,7 @@ function AppState(props) {
 	const [isAuth, setAuth] = useState(true);
 
 	return (
-		<AppContext.Provider value={{ msg: "Message", isAuth }}>
+		<AppContext.Provider value={{ msg: "Message", isAuth, setAuth }}>
 			{props.children}
 		</AppContext.Provider>
 	);
