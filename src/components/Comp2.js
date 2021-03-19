@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import AppContext from "../context/app-context";
+import { appContext } from "../context/app-context";
 
 function Comp2() {
-	const { msg } = useContext(AppContext);
+	const { msg } = useContext(appContext);
 
 	return (
 		<div>

@@ -1,5 +1,11 @@
 import { createContext } from "react";
 
-const appContext = createContext();
+export const appContext = createContext();
 
-export default appContext;
+export const ContextProvider = (props) => {
+	return (
+		<appContext.Provider value={{ msg: "message" }}>
+			{props.children}
+		</appContext.Provider>
+	);
+};

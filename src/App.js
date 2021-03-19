@@ -1,14 +1,14 @@
 import "./App.css";
-import AppState from "./context/AppState";
+import { ContextProvider } from "./context/app-context";
 import Comp1 from "./components/Comp1";
 import Comp2 from "./components/Comp2";
 
 function App() {
 	return (
-		<AppState>
+		<ContextProvider>
 			<Comp1 />
 			<Comp2 />
-		</AppState>
+		</ContextProvider>
 	);
 }
 
